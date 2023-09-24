@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link href=".css" rel="stylesheet"-->
+    <script>
+    </script>
+    <!--style>
+        body {
+            text-decoration: 20%;
+            border: 10px solid black;
+            background-color: bisque;
+           color: blueviolet
+        }
+        .list ul {
+            color: red;
+            text-align: center;
+            border: 10px solid blue;
+            margin: 30px 30px 30px 30px;
+            padding-right: 100px;
+        }
+        .list li {
+            border: dashed 20px red;
+            padding-right: 100px;
+        }
+    </style-->
+    <style>
+        @import url(.css);
+      
+    </style>
+</head>
+
+<body > 
+    <p>Nhóm 14</p>
+    <div class="list">
+        <ul>
+            <li>Nội dung 1</li>
+            <li>Nội dung 1</li>
+            <li>Nội dung 1</li>
+        </ul>
+        <ul>
+            <li>Nội dung 2</li>
+            <li>Nội dung 2</li>
+            <li>Nội dung 2</li>
+            <li>Nội dung 2</li>
+        </ul>
+    </div>
+    <form action=".php" method="post">
+        <div>
+            Tài khoản:
+    
+            <input type="text" class="username" value="user002" required>
+    
+        </div>
+        <div>
+            Mật khẩu:
+            <input type="text" class="password" value="12345678" maxlength="8" required>
+    
+            <br><br>
+        </div>
+         <div>
+            <button type="reset" >
+        </div>
+        <div>
+           <   <button onclick="handleLogin()" >Submit</button>   >
+           <button type="submit" >
+        </div>
+    </form>
+
+   
+       
+      </form> 
+</body>
+<script>
+    let username = document.querySelector(".username")    
+    let password = document.querySelector(".password")  
+    
+    
+    function handleLogin() {
+        if(!username.value){
+            alert("Không được để trống tài khoản");
+            return;
+        }
+        if(!password.value){
+            alert("Không được để trống mật khẩu")
+            return;
+        }
+        else{
+            alert("Oke");
+            action=".php"
+
+        }
+        
+    }
+        
+
+</script>
+</html>
